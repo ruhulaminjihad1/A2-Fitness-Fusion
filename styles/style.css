@@ -1,0 +1,145 @@
+/* 
+*{
+    color: wheat;
+} */
+ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 700px; 
+     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+.navtitle{
+    color: rgb(230, 83, 60);
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.navoption{
+    border: 1px solid rgb(105, 105, 105);
+padding: 10px;
+border-radius: 39px;
+}
+
+.navoption a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+     
+font-family: Inter;
+font-size: 18px;
+font-weight: 400;
+margin-right: 40px;
+}
+
+.home{
+    background-color: orangered;
+    padding: 8px 20px 8px 20px;
+    border-radius: 40px;
+}
+
+body{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+/* banner  */
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner-text{
+    width: 50%;
+}
+
+.banner-title{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 78px;
+font-weight: 900;
+ 
+}
+
+.banner-des{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+text-align: left;
+}
+
+.btn-1{
+    padding: 16px 40px 16px 40px;
+    border-radius: 40px;
+  
+    background-color: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+     
+    font-family: Inter;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.btn-2{
+    padding: 16px 40px 16px 40px;
+    border-radius: 40px;
+    border: 1px solid rgb(255, 255, 255);
+   background-color: #000;
+   color: whitesmoke;
+}
+
+.banner-img{
+    background-image: url("../images/Images\ 2.png");
+   
+    height: 550px;
+    width: 320px; }
+
+.workout{
+    background: rgba(255, 255, 255, 0.1);
+     
+    color: whitesmoke;
+    backdrop-filter: blur(20px);
+position: absolute;
+width: 193px;
+height: 98px;
+left: 1107px;
+top: 260px;
+padding: 10px;
+border-radius: 12px;
+}
+
+
+.tutorial{
+   color: rgb(255, 255, 255) ;
+   border-radius: 12px;
+backdrop-filter: blur(20px);
+position: absolute;
+width: 206px;
+height: 96px;
+left: 764px;
+top: 556px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.t-logo{
+    width: 40px;
+height: 40px;
+background: rgb(230, 83, 60);
+border-radius: 50%;
+margin-right: 15px;
+}
+/* Change habits section start  */
