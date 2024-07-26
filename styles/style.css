@@ -2,6 +2,7 @@
 *{
     color: wheat;
 } */
+ 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 nav{
     display: flex;
@@ -219,3 +220,133 @@ border-radius: 30px;
 /* .run-btn{
     padding: 16px 40px 16px 40px;
 } */
+ /* meet team  */
+ .meet-container{
+
+ }
+ .meet{
+    text-align: center;
+    justify-content: center;
+    color: white;
+    width: 670px;
+    margin: auto;
+ }
+ .meet-title{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+  
+ }
+ .meet-des{
+    color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+text-align: center;
+ }
+ .meet-img-container{     height: 600px;
+    margin: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    gap: 20px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.1); 
+ }
+
+ .meet-img-1{
+    background-image: url("../images/trainer1.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+ .meet-img-1{
+    background-image: url("../images/trainer1.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+ .meet-img-1{
+    background-image: url("../images/trainer1.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+ .meet-img-2{
+    background-image: url("../images/trainer2.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+background-color: rgba(0, 0, 0, 0.2)
+}
+ .meet-img-3{
+    background-image: url("../images/trainer3.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+ .meet-img-4{
+    background-image: url("../images/trainer4.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+ .meet-img-5{
+    background-image: url("../images/exercise5.jpg");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+ .meet-img-6{
+    background-image: url("../images/trainer6.png");
+    background-repeat: no-repeat;
+    height: 283px;
+    width: 345px;
+    background-size: cover;
+    border-radius: 18px ;
+margin: auto;
+}
+
+.meet-text{
+    padding-top: 190px;
+    line-height: 0%;
+}
+.meet-img-name{
+    font-family: Inter;
+font-size: 28px;
+font-weight: 900;
+color:  rgb(255, 255, 255);
+padding-left: 10px;
+}
+ .meet-img-position{
+    font-size: 18px;
+   
+    color:   rgba(255, 255, 255, 0.5);
+padding-left: 10px;
+  
+
+ }
