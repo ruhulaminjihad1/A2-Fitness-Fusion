@@ -12,8 +12,9 @@ nav{
 header{
     max-width: 1200px;
     margin: 0 auto;
-    height: 700px; 
-     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+ ; 
+     background: linear-gradient(180.00deg, rgba(17, 17, 20, 0.8) 0%,
+     rgba(19, 19, 24, 0) 100%);
 }
 .navtitle{
     color: rgb(230, 83, 60);
@@ -39,7 +40,10 @@ font-size: 18px;
 font-weight: 400;
 margin-right: 40px;
 }
-
+.ham-berger{
+    color: wheat;
+    display: none;
+}
 .home{
     background-color: orangered;
     padding: 8px 20px 8px 20px;
@@ -49,7 +53,7 @@ margin-right: 40px;
 body{
    
     margin: 0 auto;
-    background-color: black;
+    background-color: rgb(9, 9, 9);
     font-family: "Inter", sans-serif; 
 }
 header , main{
@@ -105,10 +109,12 @@ text-align: left;
 }
 
 .banner-img{
-    background-image: url("../images/Images\ 2.png");
+   
    
     height: 550px;
-    width: 320px; }
+    width: 320px;
+position: relative;
+}
 
 .workout{
     background: rgba(255, 255, 255, 0.1);
@@ -116,10 +122,11 @@ text-align: left;
     color: whitesmoke;
     backdrop-filter: blur(20px);
 position: absolute;
-width: 193px;
-height: 98px;
-left: 1107px;
-top: 260px;
+ width: 193px;
+  height: 98px;
+ 
+top: 25%;
+left: 70%;
 padding: 10px;
 border-radius: 12px;
 }
@@ -130,10 +137,10 @@ border-radius: 12px;
    border-radius: 12px;
 backdrop-filter: blur(20px);
 position: absolute;
-width: 206px;
+/* width: 206px;
 height: 96px;
-left: 764px;
-top: 556px;
+left: 764px; */
+top:   70%;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -146,8 +153,13 @@ height: 40px;
 background: rgb(230, 83, 60);
 border-radius: 50%;
 margin-right: 15px;
+ margin-left: 10px;
 }
-
+#play{
+    font-size: 20px;
+ margin-top: 10px;
+ margin-left: 14px;
+}
 /* Change habits section start  */
 .change-habit{
      align-items: center;
@@ -223,6 +235,19 @@ border-radius: 30px;
 /* .run-btn{
     padding: 16px 40px 16px 40px;
 } */
+ #trainingtitle{
+    text-align: left;
+ }
+ #trainingdes{
+    text-align: left;
+ }
+ .tcard-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ }
+ .tcard-container  img{
+ height: 300px;
+ }
  /* meet team  */
  .meet-container{
 
@@ -234,14 +259,14 @@ border-radius: 30px;
     width: 670px;
     margin: auto;
  }
- .meet-title{
+ .meet-title, .trainingtitle{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 48px;
     font-weight: 900;
   
  }
- .meet-des{
+ .meet-des , .trainingdes{
     color: rgba(255, 255, 255, 0.5);
 font-family: Inter;
 font-size: 14px;
@@ -403,4 +428,118 @@ font-size: 14px;
  .copyright{
     text-align: center;
     padding-bottom: 40px;
+ }
+ .training{
+    color: wheat;
+ }
+ /* mobile responsive  */
+ @media screen and (max-width: 570px){
+    .banner-container{
+        display: block;
+    }
+    .navoption{
+        display: none;
+    }
+    .ham-berger{
+        display: block;
+    }
+    .habits{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .banner-title{
+        color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+     
+    }
+    .banner-text{
+        width: 100%;
+    }
+    header{
+         padding: 20px;
+    }
+    .run-mile{
+        display: block;
+        background-color: rgb(34, 34, 34);
+        margin-top: 100px;
+        border-radius: 18px;
+        padding: 50px;
+        justify-content: space-between;
+       
+        }
+        .run-text{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        #run-btn{
+            width: 90%;
+        }
+        .meet-img-container{ 
+            height: 100%;
+           
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 15px;
+            margin: 40px;
+            gap: 20px;
+            border-radius: 18px;
+            background-color: rgba(255, 255, 255, 0.1); 
+         }
+         .meet{
+            text-align: center;
+            justify-content: center;
+            color: white;
+            width: auto;
+            margin: 20px;
+           
+         }
+         .footer{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 50px  ;
+
+           
+         }
+         #getstarted{
+margin-top: -50px;
+margin-bottom: -50px;
+         }
+         .fitness{
+            padding-left: -100px;
+         }
+         .banner-img{
+            margin-top: 50px;
+         }
+         .workout{
+            background: rgba(255, 255, 255, 0.1);
+             
+            color: whitesmoke;
+            backdrop-filter: blur(20px);
+        position: absolute;
+         width: 193px;
+          height: 98px;
+         
+        top: 10%;
+        left: 70%;
+        padding: 10px;
+        border-radius: 12px;
+        }
+        .tutorial{
+            color: rgb(255, 255, 255) ;
+            border-radius: 12px;
+         backdrop-filter: blur(30px);
+         position: absolute;
+         /* width: 206px;
+         height: 96px;
+         left: 764px; */
+         top:   45%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+         }
  }

@@ -11,6 +11,10 @@
       href="images/fav3.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -24,12 +28,17 @@
           <a href="">Contact</a>
           <a href="">About</a>
         </div>
+        <div class="ham-berger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
       <!-- banner  -->
       <div class="banner-container">
         <div class="banner-text">
           <h2 class="banner-title">
-            Get Body in <span>Shape</span> & stay healthy
+            Get Body in <br />
+            <span>Shape</span> & stay <br />
+            healthy
           </h2>
           <p class="banner-des">
             A huge selection of health and fitness content, healthy recipes and
@@ -40,13 +49,17 @@
             <button class="btn-2">DownLoad App</button>
           </div>
         </div>
+
         <div class="banner-img">
+          <img src="images/Images 2.png" alt="" />
           <div class="workout">
             <h2>500+</h2>
             <p>Free Workout Videos</p>
           </div>
           <div class="tutorial">
-            <div class="t-logo"></div>
+            <div class="t-logo">
+              <i id="play" class="fa-solid fa-play"></i>
+            </div>
             <div>
               <h2>350+</h2>
               <p>Video tutorial</p>
@@ -97,16 +110,28 @@
             We believe fitness should be accessible to everyone, everywhere,
             regardless of income or access to a gym.
           </p>
-          <button class="btn-1">Join Now</button>
+          <button id="run-btn" class="btn-1">Join Now</button>
         </div>
         <div>
           <img class="run-image" src="images/run.jpg" alt="" />
         </div>
       </section>
+      <!-- training section  -->
       <section class="training">
-        <h1>Training and Exercise</h1>
+        <h1 id="trainingtitle" class="trainingtitle">Training and Exercise</h1>
 
-        <p></p>
+        <p id="trainingdes" class="trainingdes"> We believe fitness should be accessible to everyone, everywhere, regardless of income or 
+          access to a gym.</p>
+          <div class="tcard-container">
+            <div class="tcard1">
+              <img src="images/exercise1.jpg" alt="">
+            </div>
+            <div class="tcard2"><img src="images/exercise2.png" alt=""></div>
+            <div class="tcard3"><img src="images/exercise3.png" alt=""></div>
+            <div class="tcard4"><img src="images/exercise4.png" alt=""></div>
+            <div class="tcard5"><img src="images/exercise5.jpg" alt=""></div>
+            <div class="tcard6"><img src="images/exercise6.jpg" alt=""></div>
+          </div>
       </section>
       <!-- meet our team section start  -->
       <section class="meet-container">
@@ -171,7 +196,7 @@
             professional workouts.
           </p>
         </div>
-        <div class="get-started">
+        <div id="getstarted" class="get-started">
           <h3 class="getstarted">Get Started</h3>
           <p class="feature">Service</p>
           <p class="feature">Contact Us</p>
@@ -189,7 +214,7 @@
       </section>
       <div class="hr"><hr /></div>
       <p class="copyright">All right received @copyright 2024</p>
-    </footer>
-    <!-- footer end  -->
+    </footer> -->
+    <!-- footer end 
   </body>
 </html>
