@@ -2,8 +2,14 @@
 *{
     color: wheat;
 } */
- 
+@import url("https://fonts.cdnfonts.com/css/miama");
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* @font-face {
+    font-family: "Miama";
+    src: url("Font/Miama.ttf") format("truetype");
+    }  */
+      
 nav{
     display: flex;
     justify-content: space-between;
@@ -11,17 +17,21 @@ nav{
  }
 header{
     max-width: 1200px;
-    margin: 0 auto;
- ; 
-     background: linear-gradient(180.00deg, rgba(17, 17, 20, 0.8) 0%,
-     rgba(19, 19, 24, 0) 100%);
+    margin: 0 auto; 
+    background: linear-gradient(
+        180deg,
+        rgba(19, 19, 19, 0.747) 0%,
+        rgb(30, 30, 30) 50%,
+        rgba(1, 1, 1, 0.719) 100%
+        );
+        
 }
 .navtitle{
     color: rgb(230, 83, 60);
     font-family: Inter;
     font-size: 36px;
-    font-weight: 800;
-    line-height: 120%;
+    font-weight: 600;
+    line-height: 90%;
     letter-spacing: 0%;
     text-align: left;
 }
@@ -59,6 +69,12 @@ body{
 header , main{
     max-width: 1140px;
     margin: 0 auto;
+}
+.shape{
+    font-family: 'MiaMa', sans-serif;
+    font-weight: 100;
+     font-size: 100px;
+
 }
 /* banner  */
 .banner-container{
@@ -122,8 +138,8 @@ position: relative;
     color: whitesmoke;
     backdrop-filter: blur(20px);
 position: absolute;
- width: 193px;
-  height: 98px;
+ width: auto;
+ height: auto;
  
 top: 25%;
 left: 70%;
@@ -137,9 +153,7 @@ border-radius: 12px;
    border-radius: 12px;
 backdrop-filter: blur(20px);
 position: absolute;
-/* width: 206px;
-height: 96px;
-left: 764px; */
+ 
 top:   70%;
 display: flex;
 justify-content: center;
@@ -166,7 +180,7 @@ margin-right: 15px;
      text-align: center;
      margin: 100px 0px;
 }
-.habit-title{
+.habit-title , .bmi-title{
     color: rgb(255, 255, 255);
 font-family: Inter;
 font-size: 48px;
@@ -235,6 +249,9 @@ border-radius: 30px;
 /* .run-btn{
     padding: 16px 40px 16px 40px;
 } */
+ .traininghead{
+    padding: 0px 100px;
+ }
  #trainingtitle{
     text-align: left;
  }
@@ -242,15 +259,89 @@ border-radius: 30px;
     text-align: left;
  }
  .tcard-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  
  }
  .tcard-container  img{
- height: 300px;
+ height: 250px;
+ width: 100%;
+ }
+ .row-1 , .row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+ }
+ .row-1{
+ 
+    grid-template-columns: 0.8fr 1.5fr 0.7fr;
+    box-shadow: 
+    10px 10px 20px rgba(0, 128, 0, 0.7),
+ }
+ .row-2{
+    grid-template-columns: 1.2fr 0.8fr 0.8fr;
+ }
+ /* bmi calculator  */
+ .bmi{
+    color: white;
+ 
+ }
+  
+ .bmi-calculator{
+    color: rgb(236, 231, 223);
+    justify-content: center;
+    align-items: center;
+ margin:  50px 150px;
+ }
+ .bmi-container{
+    display: flex;
+    background-color:  rgb(34, 34, 34);
+    padding:50px 150px;
+
+ }
+ .bmi-chart{
+ 
+    width: 50%;
+ }
+ .your-bmi{
+    width: 50%;
+ }
+ table td , th {
+    padding: 15px;
+   }
+
+ table{
+  
+ }
+ input{
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    margin: 2px;
+width: 50%;
+background: rgba(255, 255, 255, 0.1);
+ }
+ .f2i{
+    display: flex;
+ }
+ .select{
+    width: 95%;
+ }
+ #btn-calculate{
+    margin: 20px auto;
+ }
+ .bt{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
  }
  /* meet team  */
  .meet-container{
-
+    width: 85%;
+    margin: auto;
  }
  .meet{
     text-align: center;
@@ -258,6 +349,7 @@ border-radius: 30px;
     color: white;
     width: 670px;
     margin: auto;
+  
  }
  .meet-title, .trainingtitle{
     color: rgb(255, 255, 255);
@@ -307,7 +399,7 @@ margin: auto;
     background-image: url("../images/trainer1.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width:  100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -316,7 +408,7 @@ margin: auto;
     background-image: url("../images/trainer2.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width:  100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -326,7 +418,7 @@ background-color: rgba(0, 0, 0, 0.2)
     background-image: url("../images/trainer3.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width:  100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -335,7 +427,7 @@ margin: auto;
     background-image: url("../images/trainer4.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width:  100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -344,7 +436,7 @@ margin: auto;
     background-image: url("../images/exercise5.jpg");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width:  100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -353,7 +445,7 @@ margin: auto;
     background-image: url("../images/trainer6.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width:  100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -431,7 +523,40 @@ font-size: 14px;
  }
  .training{
     color: wheat;
+
  }
+ /* achievement section  */
+ .achievement{
+    color: white;
+    width: 90%;
+    margin: 20px auto;
+ }
+ .achievement h2{
+    font-size: 70px;
+    font-weight: 700px;
+    text-align: center;
+ }
+ .success-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+   
+}
+.success-section img{
+    width: 100%;
+    height: 270px;
+    border-radius: 10px;
+}
+.results {
+    padding: 40px;
+    align-items: center;
+     
+    text-align: center;
+
+}
+.program-button{
+
+}
  /* mobile responsive  */
  @media screen and (max-width: 570px){
     .banner-container{
@@ -462,6 +587,9 @@ font-size: 14px;
     header{
          padding: 20px;
     }
+    .buttons{
+        display: flex;
+    }
     .run-mile{
         display: block;
         background-color: rgb(34, 34, 34);
@@ -481,6 +609,7 @@ font-size: 14px;
         .meet-img-container{ 
             height: 100%;
            
+           
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             padding: 15px;
@@ -488,6 +617,9 @@ font-size: 14px;
             gap: 20px;
             border-radius: 18px;
             background-color: rgba(255, 255, 255, 0.1); 
+         }
+         .run-image{
+            width: 100%;
          }
          .meet{
             text-align: center;
@@ -520,11 +652,10 @@ margin-bottom: -50px;
             color: whitesmoke;
             backdrop-filter: blur(20px);
         position: absolute;
-         width: 193px;
-          height: 98px;
+        
          
         top: 10%;
-        left: 70%;
+        left: 65%;
         padding: 10px;
         border-radius: 12px;
         }
@@ -533,13 +664,53 @@ margin-bottom: -50px;
             border-radius: 12px;
          backdrop-filter: blur(30px);
          position: absolute;
-         /* width: 206px;
-         height: 96px;
-         left: 764px; */
+      
          top:   45%;
+        left:auto;
          display: flex;
          justify-content: center;
          align-items: center;
          
+         }
+         .traininghead{
+            padding: 0px 30px;
+         }
+         .trainingtitle{
+            font-size: 40px;
+         }
+         .meet-container{
+            width: 100%;
+            margin: auto;
+         }
+         .bmi-container{
+            display:block;
+            background-color:  rgb(34, 34, 34);
+            margin: 0px auto;
+            padding: 20px ;
+        
+         }
+         .bmi-calculator{
+            color: rgb(236, 231, 223);
+            justify-content: center;
+            align-items: center;
+         margin:  20px 40px;
+         }
+         .bmi-chart{
+            margin: 0px auto;
+   width: 100%;
+         }
+         .your-bmi{
+            width: 100%;
+         }
+         .success-section {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: space-between;
+           
+        }
+        .achievement h2{
+            font-size: 40px;
+            font-weight: 700px;
+            text-align: center;
          }
  }

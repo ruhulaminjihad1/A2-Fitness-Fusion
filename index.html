@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link href="https://fonts.googleapis.com/css2?family=MiaMa&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -37,7 +38,7 @@
         <div class="banner-text">
           <h2 class="banner-title">
             Get Body in <br />
-            <span>Shape</span> & stay <br />
+            <span class="shape">Shape</span> & stay <br />
             healthy
           </h2>
           <p class="banner-des">
@@ -54,7 +55,7 @@
           <img src="images/Images 2.png" alt="" />
           <div class="workout">
             <h2>500+</h2>
-            <p>Free Workout Videos</p>
+            <p>Free Workout   Videos</p>
           </div>
           <div class="tutorial">
             <div class="t-logo">
@@ -118,73 +119,195 @@
       </section>
       <!-- training section  -->
       <section class="training">
-        <h1 id="trainingtitle" class="trainingtitle">Training and Exercise</h1>
+        <div class="traininghead">
+          <h1 id="trainingtitle" class="trainingtitle">Training and Exercise</h1>
 
         <p id="trainingdes" class="trainingdes"> We believe fitness should be accessible to everyone, everywhere, regardless of income or 
           access to a gym.</p>
+        </div>
           <div class="tcard-container">
-            <div class="tcard1">
-              <img src="images/exercise1.jpg" alt="">
+            <div class="row-1">
+              <div class="tcard1">
+                <img src="images/exercise1.jpg" alt="">
+              </div>
+              <div class="tcard2"><img src="images/exercise2.png" alt=""></div>
+              <div class="tcard3"><img src="images/exercise3.png" alt=""></div>
             </div>
-            <div class="tcard2"><img src="images/exercise2.png" alt=""></div>
-            <div class="tcard3"><img src="images/exercise3.png" alt=""></div>
+           <div class="row-2">
             <div class="tcard4"><img src="images/exercise4.png" alt=""></div>
             <div class="tcard5"><img src="images/exercise5.jpg" alt=""></div>
             <div class="tcard6"><img src="images/exercise6.jpg" alt=""></div>
+           </div>
           </div>
       </section>
+      <!-- meet our team  -->
+     
       <!-- meet our team section start  -->
-      <section class="meet-container">
-        <div class="meet">
-          <h1 class="meet-title">Meet Our Team</h1>
-          <p class="meet-des">
-            We believe fitness should be accessible to everyone, everywhere,
-            regardless of income or access to a gym. with Fitness Fusion
-          </p>
-        </div>
-        <div class="meet-img-container">
-          <div class="meet-img-1">
-            <div class="meet-text">
-              <h4 class="meet-img-name">Jerome Bell</h4>
-              <p class="meet-img-position">Trainer</p>
-            </div>
-          </div>
-          <div class="meet-img-2">
-            <div class="meet-text">
-              <h4 class="meet-img-name">Jerome Bell</h4>
-              <p class="meet-img-position">Trainer</p>
-            </div>
-          </div>
-          <div class="meet-img-3">
-            <div class="meet-text">
-              <h4 class="meet-img-name">Jerome Bell</h4>
-              <p class="meet-img-position">Trainer</p>
-            </div>
-          </div>
-          <div class="meet-img-4">
-            <div class="meet-text">
-              <h4 class="meet-img-name">Jerome Bell</h4>
-              <p class="meet-img-position">Trainer</p>
-            </div>
-          </div>
-          <div class="meet-img-5">
-            <div class="meet-text">
-              <h4 class="meet-img-name">Jerome Bell</h4>
-              <p class="meet-img-position">Trainer</p>
-            </div>
-          </div>
-          <div class="meet-img-6">
-            <div class="meet-text">
-              <h4 class="meet-img-name">Jerome Bell</h4>
-              <p class="meet-img-position">Trainer</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
       <!-- meet our team section end  -->
     </main>
+    <section id="bmi" class="bmi">
+      <div class="total-bmi">
+        <div class="bmi-calculator">
+          <h1 class="bmi-title">BMI Calculator</h1>
+          <p class="havit-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+        </div>
+        <div class="bmi-container">
+          <div class="bmi-chart">
+            <h3 class="bt">BMI Calculator Chart</h3>
+            <table class=""  border="1">
+              <tr>
+              <th>BMI</th>
+                  <th>Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5-24.9</td>
+                <td>healthy</td>
+              </tr>
+              <tr>
+                <td>25.0-29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+          <div class="your-bmi">
+            <h3 class="bt">Calculate Your BMI</h3>
+            <p class="run-des">The BMI is calculated by dividing an adult's weight in kilograms by their height in metres squared. For example, if you weigh 70kg (around 11 stone) and are 1.70m </p>
+            <form action="">
+              <div class="f2i">
+                <input type="text" placeholder="Height/cm">
+            <input type="text" placeholder="Weight/kg">
+              </div>
+            <div class="f2i">
+              <input type="text" placeholder="Age">
+            <input type="text" placeholder="Sex">
+            </div>
+            <input class="select" type="text" placeholder="select an activity factor">
+            <button id="btn-calculate" class="btn-1">Calculate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+     </section>
     <!-- main part end  -->
-
+    <section class="meet-container">
+      <div class="meet">
+        <h1 class="meet-title">Meet Our Team</h1>
+        <p class="meet-des">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym. with Fitness Fusion
+        </p>
+      </div>
+      <div class="meet-img-container">
+        <div class="meet-img-1">
+          <div class="meet-text">
+            <h4 class="meet-img-name">Jerome Bell</h4>
+            <p class="meet-img-position">Trainer</p>
+          </div>
+        </div>
+        <div class="meet-img-2">
+          <div class="meet-text">
+            <h4 class="meet-img-name">Jerome Bell</h4>
+            <p class="meet-img-position">Trainer</p>
+          </div>
+        </div>
+        <div class="meet-img-3">
+          <div class="meet-text">
+            <h4 class="meet-img-name">Jerome Bell</h4>
+            <p class="meet-img-position">Trainer</p>
+          </div>
+        </div>
+        <div class="meet-img-4">
+          <div class="meet-text">
+            <h4 class="meet-img-name">Jerome Bell</h4>
+            <p class="meet-img-position">Trainer</p>
+          </div>
+        </div>
+        <div class="meet-img-5">
+          <div class="meet-text">
+            <h4 class="meet-img-name">Jerome Bell</h4>
+            <p class="meet-img-position">Trainer</p>
+          </div>
+        </div>
+        <div class="meet-img-6">
+          <div class="meet-text">
+            <h4 class="meet-img-name">Jerome Bell</h4>
+            <p class="meet-img-position">Trainer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="achievement">
+      <h2>What is Our special program?</h2>
+      <div class="success-section">
+        <div class="results">
+            <div>
+                <img src="images/strengthen.jpg" alt="">
+            </div>
+            <div>
+                
+                <p>Strengthing training</p>
+                <button class="btn-1">See details</button>
+            </div>
+        </div>
+        <div class="results">
+            <img src="images/boot.jpg" alt="">
+            
+            <p>Fitness Boot Camp</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/SKJ_8888-600x400.jpg" alt="">
+            
+            <p>Clients worked</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/aquatic.jpg" alt="">
+      
+            <p>Aquatic Exercise</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/support.jpeg" alt="">
+      
+            <p>Constant support</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/gym-equipment-wall-rack-storage.jpeg" alt="">
+      
+            <p>Free Instrument</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/Organized-Basement-Home-Gym-Ideas-453x680.jpg" alt="">
+      
+            <p>Organized Basement</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/certi.jpeg" alt="">
+      
+            <p>Certification</p>
+            <button class="btn-1">See details</button>
+        </div>
+        <div class="results">
+            <img src="images/about-img2-4.jpg" alt="">
+      
+            <p>Daily Assessment</p>
+            <button class="btn-1">See details</button>
+        </div>
+    </div>
+    </section>
     <!-- footer start  -->
     <footer>
       <section class="footer">
@@ -214,7 +337,7 @@
       </section>
       <div class="hr"><hr /></div>
       <p class="copyright">All right received @copyright 2024</p>
-    </footer> -->
+    </footer>  
     <!-- footer end 
   </body>
 </html>
