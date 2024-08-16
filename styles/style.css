@@ -419,7 +419,7 @@ text-align: center;
     background-image: url("../images/trainer1.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: auto;
+    width: 100%;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
