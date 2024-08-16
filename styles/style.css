@@ -44,6 +44,7 @@ header{
 }
 .navoption{
     border: 1px solid rgb(105, 105, 105);
+
 padding: 10px;
 border-radius: 39px;
 margin-right: 50px;
@@ -52,7 +53,7 @@ margin-right: 50px;
 .navoption a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-     
+     margin-left: -8px;
 font-family: Inter;
 font-size: 18px;
 font-weight: 400;
@@ -108,7 +109,7 @@ font-weight: 900;
  
 }
 
-.banner-des{
+.banner-des, .habit-1 > p, .bmi-chart td{
     color: rgba(255, 255, 255, 0.5);
 font-family: Inter;
 font-size: 16px;
@@ -198,6 +199,8 @@ margin-right: 15px;
     font-size: 20px;
  margin-top: 10px;
  margin-left: 14px;
+ 
+ display: none;
 }
 /* Change habits section start  */
 .change-habit{
@@ -229,6 +232,7 @@ letter-spacing: 0%;
 }
 .habit-1{
 color: rgb(255, 255, 255);
+padding: 0 10px;
  
 text-align: center;
 }
@@ -418,25 +422,11 @@ text-align: center;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
+background-color: rgba(72, 68, 68, 0.5);
+background-blend-mode: overlay;
+ 
 }
- .meet-img-1{
-    background-image: url("../images/trainer1.png");
-    background-repeat: no-repeat;
-    height: 283px;
-    width: 345px;
-    background-size: cover;
-    border-radius: 18px ;
-margin: auto;
-}
- .meet-img-1{
-    background-image: url("../images/trainer1.png");
-    background-repeat: no-repeat;
-    height: 283px;
-    width:  100%;
-    background-size: cover;
-    border-radius: 18px ;
-margin: auto;
-}
+ 
  .meet-img-2{
     background-image: url("../images/trainer2.png");
     background-repeat: no-repeat;
@@ -445,7 +435,8 @@ margin: auto;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
-background-color: rgba(0, 0, 0, 0.2)
+background-color: rgba(31, 29, 29, 0.5);
+background-blend-mode: overlay;
 }
  .meet-img-3{
     background-image: url("../images/trainer3.png");
@@ -455,6 +446,8 @@ background-color: rgba(0, 0, 0, 0.2)
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
+background-color: rgba(31, 29, 29, 0.5);
+background-blend-mode: overlay;
 }
  .meet-img-4{
     background-image: url("../images/trainer4.png");
@@ -464,6 +457,8 @@ margin: auto;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
+background-color: rgba(31, 29, 29, 0.5);
+background-blend-mode: overlay;
 }
  .meet-img-5{
     background-image: url("../images/exercise5.jpg");
@@ -473,6 +468,8 @@ margin: auto;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
+background-color: rgba(31, 29, 29, 0.5);
+background-blend-mode: overlay;
 }
  .meet-img-6{
     background-image: url("../images/trainer6.png");
@@ -482,6 +479,8 @@ margin: auto;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
+background-color: rgba(31, 29, 29, 0.5);
+background-blend-mode: overlay;
 }
 
 .meet-text{
@@ -526,6 +525,7 @@ letter-spacing: 0%;
 color: rgb(230, 83, 60);
 font-family: Inter;
 font-size: 60px;
+font-style: italic;
  }
  .footer-des{
   
@@ -623,6 +623,13 @@ font-size: 14px;
    
     
   }
+  #play{
+   font-size: 20px;
+margin-top: 10px;
+margin-left: 14px;
+
+display: block;
+}
     .ham-berger{
         display: block;
     }
@@ -631,6 +638,11 @@ font-size: 14px;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         margin-top: 20px;
+    }
+    .habit-title , .bmi-title, .run-title{
+      color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 38px;
     }
     .banner-title{
         color: rgb(255, 255, 255);
@@ -757,6 +769,20 @@ margin-bottom: -50px;
          }
          .trainingtitle{
             font-size: 40px;
+         }
+         .row-1 , .row-2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        
+         }
+         .row-1{
+ 
+            grid-template-columns: 0.8fr 1.5fr 0fr;
+            box-shadow: 
+            10px 10px 20px rgba(0, 128, 0, 0.7),
+         }
+         .row-2{
+            grid-template-columns: 1.2fr 0.8fr 0fr;
          }
          .meet-container{
             width: 100%;
