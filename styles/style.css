@@ -232,9 +232,10 @@ letter-spacing: 0%;
 }
 .habit-1{
 color: rgb(255, 255, 255);
-padding: 0 10px;
  
-text-align: center;
+ text-align: center;
+ 
+ 
 }
 .habit-image{
     width: 180px;
@@ -418,7 +419,7 @@ text-align: center;
     background-image: url("../images/trainer1.png");
     background-repeat: no-repeat;
     height: 283px;
-    width: 345px;
+    width: auto;
     background-size: cover;
     border-radius: 18px ;
 margin: auto;
@@ -825,5 +826,9 @@ margin-bottom: -50px;
             font-weight: 700px;
             text-align: center;
             padding: 10px;
+         }
+         .habit-1{
+            width: 90%;
+            margin: auto;
          }
  }
